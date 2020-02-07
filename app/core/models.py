@@ -1,8 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 
+
 class UserManager(BaseUserManager):
     """docstring for UserManager."""
+
     def __init__(self, arg):
         super(UserManager, self).__init__()
         self.arg = arg
