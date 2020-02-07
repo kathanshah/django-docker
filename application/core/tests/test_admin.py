@@ -8,14 +8,14 @@ class AdminSiteTests(TestCase):
         self.client = Client()
         email = "testmanagement@tullyapp.com"
         password = "password"
-        self.admin_user = get_user_model().objects.create_superuser(
+        self.admin_user = get_user_model().objects.create_super_user(
             email=email,
             password=password
         )
         self.client.force_login(self.admin_user)
 
         self.user = get_user_model().objects.create_user(
-            email=email,
+            email='testmanagement2@tullyapp.com',
             password=password,
             name="Kathan Shah"
         )
