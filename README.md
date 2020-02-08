@@ -1,20 +1,20 @@
 # django-docker
 Django Docker Boilerplate
 
-#Start project App
+# Start project App
 docker-compose run app sh -c "django-admin.py startproject app ."
 
-#Test Project
+# Test Project
 docker-compose run --rm app sh -c "python manage.py test"
 
-#Create New App
+# Create New App
 docker-compose run app sh -c "python manage.py startapp core"
 
-#Make Migrations in App
+# Make Migrations in App
 docker-compose run app sh -c "python manage.py makemigrations core"
 
-#Create Super User
+# Create Super User
 docker-compose run app sh -c "python manage.py createsuperuser"
 
-#Create New App
+# Create New App
 docker-compose run --rm app sh -c "python manage.py startapp user"
