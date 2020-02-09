@@ -55,3 +55,11 @@ class ModelTests(TestCase):
             name='Vegan'
         )
         self.assertTrue(str(tag), tag.name)
+
+    def test_ingredient_str(self):
+        """Test the Ingredient creation and String value"""
+        ingredient = models.Ingredient.objects.create(
+            user=sample_user(),
+            name="Chataka"
+        )
+        self.assertTrue(str(ingredient), ingredient.name)

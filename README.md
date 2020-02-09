@@ -18,3 +18,6 @@ docker-compose run app sh -c "python manage.py createsuperuser"
 
 # Create New App - User
 docker-compose run --rm app sh -c "python manage.py startapp user"
+
+# Run the App via Docker
+docker-compose up
