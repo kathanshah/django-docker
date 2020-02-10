@@ -21,3 +21,6 @@ docker-compose run --rm app sh -c "python manage.py startapp user"
 
 # Run the App via Docker
 docker-compose up
+
+# Build the Image
+docker-compose build
